@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+        <title>Memory Game - Play</title>
+        <script type="text/javascript" src="js/game.js"></script> 
+        <link href="css/game.css" rel="stylesheet"> 
+
+    </head>
+
+<body onload="Intro();">
+
+<div class="difficulty">
+    <ul class="difficulty-levels">
+            <div class="tittle-diffi">
+            <h1>Select difficulty</h1>  
+            </div>
+        <li onclick="DefineDifficulty(0)">Easy</li>
+        <li onclick="DefineDifficulty(1)">Intermediate</li>
+        <li onclick="DefineDifficulty(2)">Hard</li>
+        <li onclick="DefineDifficulty(3)">Inferno</li>
+    </ul>
+</div>
+
+<div class="modal">
+
+    <div class="alert-message">
+        <h1>Finished Game!</h1>
+    <button onclick="HideModal(0)">Ok</button>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="alert-message">
+        <h1>¿Will the game restart? All progress will be lost.</h1>
+    <button onclick="RestartGame()">Restart</button>
+    <button onclick="HideModal(1)">Cancel</button>
+    </div>
+</div>
+
+<div class="container">
+    
+    <div class="leader">
+        <div class="header">
+        <attempt class="header-title">Attempts : </attempt>
+        </div>
+            <ul class="score">
+        </ul>
+        </div>
+    <table name='matrix' cellspacing="10">
+                    <ul class="options">
+                    <li onclick="document.getElementsByClassName('modal')[1].style.display='block';" title="Restart"><img src="img/restart.png"></li>
+                    </ul>
+                    <tr>
+            <td onclick="Changeimage(this)"   class="ele" id='0'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='1'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='2'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='3'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='4'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='5'></td>
+
+            
+        </tr>
+
+        <tr>
+            <td onclick="Changeimage(this)"   class="ele" id='6'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='7'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='8'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='9'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='10'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='11'></td>
+
+        </tr>
+
+        <tr>
+            <td onclick="Changeimage(this)"   class="ele" id='12'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='13'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='14'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='15'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='16'></td>
+            <td onclick="Changeimage(this)"   class="ele" id='17'></td>
+        </tr>
+    </table>
+
+    <h1 class="message"></h1>
+    <button class="message-button" onclick="Playingagain()">Playing again</button>
+</div>
+</body>
+</html>

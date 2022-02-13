@@ -1,0 +1,272 @@
+html,body
+{
+    width : 100%;
+    height : 100%;
+    padding : 0px;
+    margin : 0px;
+    background: #ffffff url('../img/background3.jpg');
+    font-family: 'Coda', cursive;
+
+}
+
+.leader
+{
+    display: inline-block;
+    width : 30%;
+
+    float : right;
+    overflow-x: hidden;
+
+}
+
+.options
+{
+   display: block;
+   margin : auto;
+   padding : 0px;
+   padding-top : 20px;
+}
+
+.options li
+{
+    display: inline;
+    list-style-type: none;
+    padding : 50px;;
+    font-family: 'Coda';
+}
+
+.options li img
+{
+    width : 30px;
+    height : 30px;
+}
+
+
+.leaderboard
+{
+    display: block;
+    font-family: 'Coda';
+    color : black;
+    font-size : 30px;
+    font-weight: lighter;
+}
+
+.score
+{
+  float : left;
+}
+
+.score li
+{
+    font-family: 'Coda';
+    font-size : 15px;
+    color : black;
+    display : block;
+    float : left;
+    margin-top : 10px;
+}
+
+
+
+.names
+{
+    display: block;
+    font-family: Roboto;
+    font-size : 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+table[name='matrix']
+{
+    display: none;
+    padding : 0px;
+    position: relative;
+    top : 10%;
+    border-radius: 10px;
+    padding: 32px;
+    background: linear-gradient(160deg, #379AF0 0%, #78F0E6 100%);
+
+}
+
+table[name='matrix'] tr td{
+    width : 78px;
+    height  : 78px;
+    background-color: #1A4870;
+    border-radius: 8px;
+    transition: background-color 0.4s linear;
+    border: solid 2px white;
+     box-shadow: 10px 13px 15px 0 rgba(46, 61, 73, 0.5);
+
+}
+
+
+.ele
+{
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+}
+.container
+{
+    display : block;
+    width : 100%;
+    height : 100%;
+    text-align : center;
+    margin : auto;
+}
+
+.header
+{
+    display: block;
+    position: relative;
+    top : 0px;
+    left : 0px;
+    right : 0px;
+    padding : 0px;
+    margin : 0px;
+    width : 100%;
+    text-align: center;
+}
+
+.header-title
+{
+    display: block;
+    width : inherit;
+    font-family : 'Coda';
+    color : black;
+    font-size : 23px;
+    padding : 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin : 0px;
+    margin-right: 100px;
+}
+
+.header-title sub
+{
+    font-size : 15px;
+}
+
+.difficulty
+{
+    position: fixed;
+    display: none;
+    width : 100%;
+    height : 100%;
+    z-index : 1;
+    text-align: center;
+    background: #ffffff url('../img/background3.jpg');
+}
+
+.difficulty-levels
+{
+    display: block;
+    margin : auto;
+    margin-top : 15%;
+}
+
+.tittle-diffi
+{
+    margin: 60px auto;
+}
+
+.difficulty-levels li
+{
+    list-style-type: none;
+    width : 40%;
+    background-color: #57C5F0;
+    color : black;
+    border-radius: 5px;
+    padding : 20px 10px 20px 10px;
+    margin : auto;
+    font-family: 'Coda';
+    font-weight: bold;
+    margin-top : 8px;
+}
+
+.modal
+{
+    position: fixed;
+    display: none;
+    width : 100%;
+    height : 100%;
+    background-color : rgba(0,0,0,0.8);
+    z-index : 1;
+    text-align: center;
+}
+
+.alert-message
+{
+    display: block;
+    width : 30%;
+    height : 30%;
+    background-color : white;
+    border-radius : 5px;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.alert-message h1
+{
+    font-family: 'Calibri';
+    font-size : 30px;
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.alert-message button
+{
+    width : 40%;
+    height : 20%;
+    background-color: #57C5F0;
+    color : black;
+    font-family: 'Coda';
+    font-size : 20px;
+    border-width: 0px;
+    border-radius: 10px;
+
+}
+.message
+{
+    display : none;
+    width : 100%;
+    font-family: Coda;
+    color : black;
+    font-weight: lighter;
+    font-size : 25px;
+    margin : auto;
+    position: relative;
+    top : 30%;
+}
+
+.message-button
+{
+    display: none;
+    width : 10%;
+    height : 5%;
+    border-width : 0px;
+    color : black;
+    background-color : #57C5F0;
+    position: relative;
+    top : 35%;
+    margin : auto;
+    border-radius : 5px;
+}
+
+@media only screen and (max-width : 1140px)
+{
+    .leader
+    {
+    width :35%;
+    }
+
+}
+
+@media only screen and (max-width : 1140px)
+{
+    .leader
+    {
+    width :100%;
+    }
+}
+
